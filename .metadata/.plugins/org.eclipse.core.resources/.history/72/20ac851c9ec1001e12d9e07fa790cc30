@@ -33,13 +33,15 @@ public class OperatorPractice {
 		System.out.print("번호 :");
 		int iNum = sc.nextInt();
 		
+		sc.nextLine();
+		
 		System.out.print("성별(남학생/여학생) :");
 		String sex = sc.next();
 		
 		System.out.print("성적(소수점 아래 둘째 자리까지) :");
 		double gradenum = sc.nextDouble();
 		
-		System.out.printf("%d학년 %d반 %d번 %s %s의 성적은 %.2f이다.\n",grade, classname, iNum, name, sex,gradenum);
+		System.out.printf("%d학년 %d반 %d번 %s %s의 성적은 %.2f이다.",grade, classname, iNum, name, sex,gradenum);
 		
 		
 		
@@ -56,14 +58,8 @@ public class OperatorPractice {
 		System.out.print("수학 :");
 		int sub3 = sc.nextInt();
 		
-		double avg = (sub1+sub2+sub3)/3.0;
 		System.out.println("합계 : " +(sub1+sub2+sub3));
 		System.out.println("평균 : "+ (sub1+sub2+sub3)/3.0);
-		
-		// 각 과목이 40점이 넘고 평균이 60점 넘으면 합격 그렇지 못 하면 불합격
-		boolean result = (sub1 >= 40) && (sub2 >= 40) && (sub3 >= 40) && (avg >= 60);
-		
-		System.out.println(result ? "합격" : "불합격");
-	}
+		}
 
 }
