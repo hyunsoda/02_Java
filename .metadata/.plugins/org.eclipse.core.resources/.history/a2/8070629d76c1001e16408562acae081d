@@ -1,0 +1,26 @@
+package com.kh.variable.practice2;
+
+import java.util.Scanner;
+
+public class Practice3 {
+	public void ex2() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("국어 :");
+		double sub1 = sc.nextDouble();
+		
+		System.out.print("영어 :");
+		double sub2 = sc.nextDouble();
+		
+		System.out.print("수학 :");
+		double sub3 = sc.nextDouble();
+		
+		double sub4 = (sub1+sub2+sub3)/3;
+	
+		System.out.print("총점 :");
+		System.out.printf("%f + %f + %f = %d\n",sub1,sub2,sub3,sub1+sub2+sub3);
+		
+		System.out.print("평균 :");
+		System.out.printf("(%f + %f + %f)/3 = %d\n", sub1,sub2,sub3,(sub1+sub2+sub3)/3);
+		}
+}

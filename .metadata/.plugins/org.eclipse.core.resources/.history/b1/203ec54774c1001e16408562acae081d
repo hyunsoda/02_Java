@@ -1,0 +1,28 @@
+package com.kh.variable.run;
+
+import java.util.Scanner;
+
+import com.kh.variable.practice2.Practice1;
+
+
+public class PracticeRun {
+	
+	// 실행클래스
+	public static void main(String[] args) {
+		
+		Practice1 pr = new Practice1();
+		pr.ex1();
+		pr.ex2();
+		
+		
+		System.out.print("문자를 입력하세요 : ");
+		Scanner sc = new Scanner(System.in);
+		
+		String str1 = sc.next();
+		System.out.println((char)(str1.charAt(0));
+		
+		
+		
+	}
+
+}

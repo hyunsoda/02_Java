@@ -1,0 +1,17 @@
+package com.kh.variable.run;
+
+import com.kh.variable.practice2.Practice1;
+
+public class PracticeRun {
+	
+	// 실행클래스
+	public static void main(String[] args) {
+		
+		Practice1 pr = new Practice1();
+		pr.ex1();
+		
+		
+		
+	}
+
+}

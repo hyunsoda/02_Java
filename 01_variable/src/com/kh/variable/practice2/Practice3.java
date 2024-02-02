@@ -1,0 +1,70 @@
+package com.kh.variable.practice2;
+
+import java.util.Scanner;
+
+public class Practice3 {
+	public void ex2() {
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("국어 :");
+		double sub1 = sc.nextDouble();
+		
+		System.out.print("영어 :");
+		double sub2 = sc.nextDouble();
+		
+		System.out.print("수학 :");
+		double sub3 = sc.nextDouble();
+		
+	
+		System.out.printf("총점 : %d\n",(int)(sub1+sub2+sub3));
+		
+		System.out.printf("평균 : %d\n",(int)(sub1+sub2+sub3)/3);
+		}
+	
+	
+	public void ex3() {
+		// sc.next()와 sc.nextLine()의 차이
+		
+		// next() : 띄어쓰기 입력 불가, 띄어쓰기를 구분인자로 생각하여 각각저장, 
+		// nextLine() : 문자열에 띄어쓰기 가능, 줄구분까지 저장
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("문자열 입력 1 : ");
+		String input1 = sc.nextLine();
+		
+		System.out.print("문자열 입력 2 : ");
+		String input2 = sc.next();
+		
+		System.out.println(input1);
+		System.out.println(input2);
+		
+		
+	}
+
+	
+	public void ex4() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수 입력 : ");
+		int input1 = sc.nextInt();
+		System.out.println(input1);
+		
+		// 입력버퍼에 남은 개행문자 제거
+		sc.nextLine(); // 수행되면서 버퍼에 남은 개행문자 뺌
+		
+		System.out.print("문자열 입력 :");
+		String input2 = sc.nextLine();
+		System.out.println(input2);
+		//nextLine()만 띄어쓰기, 개행문자를 출력해줌
+		// int input에 엔터를 치는 순간 \n이 들어가게 됨
+		//  	개행문자는 출력되지 않기 때문에 1만 출력되고 입력버퍼에 개행문자가 남게 됨
+		//  	nextLine()이 수행될 때 공백등을 출력해주기 때문에 남아있던 개행문자가 밀려서 수행됨
+	
+		// nextLine()을 쓰기 전에 next(), nextInt()등 썼다면 
+		// 쓴 다음에 입력버퍼 개행문자 제거해줘야 함!
+		
+	
+	}
+}

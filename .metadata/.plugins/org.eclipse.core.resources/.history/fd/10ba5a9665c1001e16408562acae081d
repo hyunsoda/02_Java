@@ -1,0 +1,60 @@
+package edu.kh.variable.ex2;
+
+public class PrintExample {
+	// main 작성 ctrl + space + enter
+	public static void main(String[] args) {
+		
+		// System.out.print() : 단순 출력(출력 후 줄바꿈 x)
+		// System.out.println() : 한 줄 출력(출력 후 줄바꿈 수행)
+		// 줄바꿈이라는 차이점은 있지만 괄호안의 내용이 그대로 출력된다는 것은 똑같음
+		
+		// System.out.println(); 자동완성 syso ctrl + space
+		System.out.println("테스트 1");
+		System.out.println("테스트 2");
+		
+		System.out.print("테스트 4");
+		// 테스트 3
+		// 테스트 4
+		
+//		System.out.printf(); : 출력될 문자열 형식을 패턴으로 지정하는 출력구문
+		
+		System.out.println(); // 위에 print 구문 썼으니 줄바꿈 해줌
+		 
+		int iNum1 = 10;
+		int iNum2 = 5;
+		
+		// 10 + 5 = 15
+		System.out.println(iNum1+ "+" + iNum2 + "=" + (iNum1+iNum2));
+		// 중간 오타..
+		
+		/*	printf 사용하는 패턴
+		 *  %d : 정수형, %o : 8진수, %x : 16진수
+			%c : 문자, %s : 문자열
+			%f : 실수(소수점 아래 6자리), %e : 지수형태표현, %g : 대입 값 그대로
+			%A : 16진수 실수
+			%b : 논리형
+		 * */
+		
+		// System.out.printf("패턴", 패턴에 들어갈 값);
+		
+		// 10 + 5 = 15
+		System.out.printf("%d + %d = %d\n",iNum1,iNum2,iNum1+iNum2 );
+		// 줄바꿈하려면 \n 붙여줘야한다
+		
+		// 10 + 10 * 5 / 2 = 35
+		System.out.printf("%d + %d * %d / 2= %d\n", iNum1, iNum1, iNum2, iNum1 + iNum1 * iNum2 / 2); // 뒤에 값은 패턴에 일치시켜야 하는 값만
+		
+		// 패턴 연습
+		int iNum3 = 3;
+		System.out.printf("%d\n", iNum3); // 3
+		System.out.printf("%5d\n", iNum3); // 5칸 공간 확보 후 오른쪽 정렬
+		System.out.printf("%-5d\n", iNum3); // 5칸 공간 확보 후 오른쪽 정렬
+		
+		// 소수점 자리 제어 (반올림처리)
+	
+		System.out.printf("%f\n",10/4.0); // 2.500000
+		System.out.printf("%.2f\n",10/4.0); // 소수점 둘째자리까지만 나타내고 싶다
+		System.out.printf("%.0f\n",10/4.0); // 소수점 아래를 표현하지 않겠다 -> 올림처리돼서 3출력
+	
+	}
+}
