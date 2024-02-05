@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\workspace\02_Java\03_control"/>
 			<item value="C:\workspace\02_Java\01_variable"/>
 			<item value="C:\workspace\02_Java\00_javaBasic"/>
 			<item value="C:\workspace\02_Java"/>

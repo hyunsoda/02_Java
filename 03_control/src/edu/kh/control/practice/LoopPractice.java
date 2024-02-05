@@ -62,4 +62,68 @@ public class LoopPractice {
 		
 	}
 
+	public void practice5() {
+		System.out.print("숫자 :");
+		int input = sc.nextInt();
+		System.out.println("====="+ input+"단 =====");
+		
+		for(int i= 1;i<=9;i++) {
+			System.out.printf("%d * %d = %d\n",input, i, input*i);
+			
+		}
+	}
+
+	public void practice6() {
+		System.out.println("숫자 : ");
+		int input = sc.nextInt();
+		if(input<2||input>9) {
+			System.out.println("2~9사이 숫자만 입력하세요");
+		}else {
+		for(int i = input;i<=9;i++)	{
+			System.out.printf("=====%d단=====\n",i);
+			for(int j = 1;j<=9;j++) {
+				System.out.printf("%d * %d = %d\n", i, j, j*i); 
+			}
+			
+		}
+		}
+		
+	}
+
+	public void practice7() {
+		System.out.print("정수 입력 : ");
+		int num = sc.nextInt();
+		for(int i = 1; i<=num;i++) {
+			for(int j = 1; j<=i; j++) {
+				System.out.print("*");
+			}
+			
+				System.out.println();
+		}
+	}
+
+	public void practice8() {
+		System.out.print("정수입력 : ");
+		int input = sc.nextInt();
+		for(int j = input; j>=1; j--) {
+			for(int i=1;i<=j;i++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	
+	}
+
+	public void practice9() {
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
+		for(int i = 1; i <= input; i++) {
+			for(int j = 1; j <= i; j++) {
+				System.out.print(""+"*");
+			}
+			System.out.println();
+		}
+	}
+	
+
 }
