@@ -42,7 +42,7 @@ public class PrintExample {
 		// 줄바꿈하려면 \n 붙여줘야한다
 		
 		// 10 + 10 * 5 / 2 = 35
-		System.out.printf("%d + %d * %d / 2= %d\n", iNum1, iNum1, iNum2, iNum1 + iNum1 * iNum2 / 2) // 뒤에 값은 패턴에 일치시켜야 하는 값만
+		System.out.printf("%d + %d * %d / 2= %d\n", iNum1, iNum1, iNum2, iNum1 + iNum1 * iNum2 / 2); // 뒤에 값은 패턴에 일치시켜야 하는 값만
 		
 		// 패턴 연습
 		int iNum3 = 3;
@@ -56,5 +56,29 @@ public class PrintExample {
 		System.out.printf("%.2f\n",10/4.0); // 소수점 둘째자리까지만 나타내고 싶다
 		System.out.printf("%.0f\n",10/4.0); // 소수점 아래를 표현하지 않겠다 -> 올림처리돼서 3출력
 	
-	}
+		// 문자, 문자열, boolean
+		boolean isTrue = false;
+		char ch = '조';
+		String str = "안녕하세요"; // String은 참조형
+		
+		// false / 조 / 안녕하세요
+		System.out.printf("%b / %c / %s\n", isTrue, ch, str);
+		
+		
+		// escape(이스케이프 == 탈출) 문자 : 일반 문자가 아닌 특수문자 표현
+		
+		//     \  
+		System.out.println("\\"); // 백슬래시(역슬래시) 출력방법
+		//   \o/ 
+		System.out.println("\\o/");
+		
+		System.out.println("a\tb\tc\td"); // tab 출력
+		// 한공간씩 표현X, 한번에 공간차지
+	
+		// 유니코드 이스케이프
+		System.out.println("\u0041"); // A
+		// 유니코드(16진수)
+		// 65를 16진수로 표현
+		// 65 나누기 16 하면 몫 4, 나머지 1
+}
 }

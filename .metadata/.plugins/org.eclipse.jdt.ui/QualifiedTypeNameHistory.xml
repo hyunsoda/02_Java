@@ -6,6 +6,7 @@
     <fullyQualifiedTypeName name="com.kh.variable.practice2.Practice3"/>
     <fullyQualifiedTypeName name="edu.kh.op.ex.OpExample"/>
     <fullyQualifiedTypeName name="edu.kh.op.practice.OperatorPractice"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="edu.kh.op.practice.OperatorPractice2"/>
+    <fullyQualifiedTypeName name="edu.kh.control.condition.ConditionExample"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
