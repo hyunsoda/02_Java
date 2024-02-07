@@ -14,5 +14,6 @@
     <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.vo.People"/>
     <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.service.AbstractionService"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="edu.kh.array2.practice.Array2Practice"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
