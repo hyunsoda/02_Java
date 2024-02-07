@@ -152,5 +152,210 @@ public class PracticeService {
 		System.out.println(str);
 	}
 
+	public void practice8() {
+//		3이상인 홀수를 입력 받아 배열의 중간까지는 1부터 1씩 증가하여 오름차순으로 값을 넣고,
+//		중간 이후부터 끝까지는 1씩 감소하여 내림차순으로 값을 넣어 출력하세요.
+//		단, 입력한 정수가 홀수가 아니거나 3 미만일 경우 “다시 입력하세요”를 출력하고
+//		다시 정수를 받도록 하세요.
+		System.out.print("정수 입력: ");
+		int input = sc.nextInt();
+		int input2 = (1+input)/2;
+		int arr[] =  new int[input];
+		int max = arr[0];
+		String str = "";
+		
+		if(input<3||input % 2==0) {
+			System.out.println("다시 입력하세요.");
+		} else {
+			for(int i = 0; i < arr.length/2; i++) {
+				arr[i] = i+1;
+				
+				str+=arr[i]+" ";
+			}
+				for(int k = arr.length/2 ; k < arr.length;k++) {
+				arr[k]= input2--;
+				str+=arr[k]+" ";
+			}
+			System.out.println(str);
+		}
+		
+	}
+
+	public void practice9() {
+//		10개의 값을 저장할 수 있는 정수형 배열을 선언 및 할당하고,
+//		1~10 사이의 난수를 발생시켜 배열에 초기화한 후 출력하세요.
+		int arr[] = new int[10];
+		String str ="";
+		
+		for(int i=0; i <arr.length;i++) {
+			int random = (int)(Math.random()*11+1);
+			arr[i] = random;
+			str += arr[i]+" ";
+		}
+		System.out.println(str);
+	}
+
+	public void practice10() {
+//		10개의 값을 저장할 수 있는 정수형 배열을 선언 및 할당하고,
+//		1~10 사이의 난수를 발생시켜 배열에 초기화 후
+//		배열 전체 값과 그 값 중에서 최대값과 최소값을 출력하세요.
+		int arr[] = new int[10];
+		int max = arr[0];
+		int min = arr[0];
+		String str = "";
+		
+		for(int i = 0; i< arr.length; i++) {
+			int random = (int)(Math.random()*10+1);
+			arr[i]= random;
+			str += arr[i]+ " ";
+			if(max<arr[i]) {
+				max = arr[i];
+			}
+			if(min>arr[i]) {
+				min = arr[i];
+			}
+		}
+		System.out.println("발생한 난수 : " + str);
+		System.out.println("최대값 : "+ max);
+		System.out.println("최소값 : "+ min);
+	}
+
+	public void practice11() {
+//		10개의 값을 저장할 수 있는 정수형 배열을 선언 및 할당하고
+//		1~10 사이의 난수를 발생시켜 중복된 값이 없게 배열에 초기화한 후 출력하세요.
+		int arr[] = new int[10];
+		String str ="";
+		
+		for(int i = 0; i < arr.length;i++) {
+			int random = (int)(Math.random()*10+1);
+			arr[i]= random;
+			
+			
+		for(int x = 0; x < i; x++) {
+			if(arr[x] == random) {
+				i--;
+				break;
+			}
+		}	
+		}
+		for(int k=0; k<arr.length;k++) {
+			str += arr[k]+" ";
+		}
+		System.out.println(str);
+		
+	}
+
+	public void practice12() {
+//		로또 번호 자동 생성기 프로그램을 만들기.
+//		(중복 값 없이 오름차순으로 정렬하여 출력하세요.)
+		int lotto[] = new int[6];
+		String str = "";
+		
+		for(int i = 0; i <lotto.length; i++) {
+			int random = (int)(Math.random()*45+1);
+			lotto[i]= random;
+			for(int k = 0; k < i; k++) {
+				if(lotto[k] == random) {
+					i--;
+				}
+			}
+		}
+		Arrays.sort(lotto);
+		for(int x= 0; x<lotto.length; x++) {
+			str += lotto[x]+ " ";
+		}
+		System.out.println(str);
+	}
+
+	public void practice13() {
+//		문자열을 입력 받아 문자열에 어떤 문자가 들어갔는지 배열에 저장하고
+//		문자의 개수와 함께 출력하세요.
+		System.out.print("문자열 :");
+		String input = sc.next();
+		char arr[] = new char[input.length()];
+		String str ="";
+		
+		for(int i = 0; i<arr.length;i++) {
+			arr[i]=input.charAt(i);
+			str += arr[i];
+		}
+		System.out.println("문자열에 있는 문자 : " + str);
+		System.out.println("문자 개수 : " + (arr.length));
+	}
+
+	public void practice14() {
+//		사용자가 입력한 배열의 길이만큼의 문자열 배열을 선언 및 할당하고
+//		배열의 인덱스에 넣을 값 역시 사용자가 입력하여 초기화 하세요.
+//		단, 사용자에게 배열에 값을 더 넣을지 물어보고 몇 개를 더 입력할 건지,
+//		늘린 곳에 어떤 데이터를 넣을 것인지 받으세요.
+//		사용자가 더 이상 입력하지 않겠다고 하면 배열 전체 값을 출력하세요.
+		
+		int plus = 0;
+		int count = 1;
+		int countinput = 0;
+		String copyArr[] = new String[count];
+		String copyArr2[] = new String[countinput];
+		
+		
+		boolean flag = false;
+		
 	
+	
+			System.out.print("배열의 크기를 입력하세요 : ");
+			int input = sc.nextInt();
+			countinput += input;
+			
+			String arr[] = new String[input];
+			sc.nextLine();
+		
+		
+		
+			for(int i = 0; i <arr.length; i++) {
+			System.out.print((i+1)+"번째 문자열 : ");
+			arr[i] =sc.nextLine();
+			}
+			
+			
+			System.out.print("더 값을 입력하시겠습니까?(y/n) : ");
+			char ch = sc.next().charAt(0);
+		
+			
+			if(ch=='y') {
+				flag = true;
+				sc.nextLine();
+				
+			}else {
+				System.out.println(Arrays.toString(arr));
+			}
+			
+			
+		 while(flag) {
+			 System.out.print("더 입력하고 싶은 개수 : ");
+			 int input2 = sc.nextInt();
+			 plus = input + input2;
+			 sc.nextLine();
+			 String arr2[] = new String[plus];
+			 
+			 String arrnew[] = new String[input2];
+			 
+			 for(int i = 0; i <arrnew.length; i++) {
+					System.out.print((i+1)+"번째 문자열 : ");
+					arrnew[i] =sc.nextLine();
+					}
+				System.out.print("더 값을 입력하시겠습니까?(y/n) : ");
+				ch = sc.next().charAt(0);
+				
+				if(ch=='y') {
+					flag = true;
+					sc.nextLine();
+					copyArr = Arrays.copyOf(arr2,arr2.length );
+					
+				}else {
+					System.out.println(Arrays.toString(copyArr));
+				}
+		 }
+		System.out.println();
+	
+		
+	}
 }
