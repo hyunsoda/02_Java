@@ -6,17 +6,24 @@ public class Book {
 	private int price;
 	private double discountRate;
 	private String author;
+
 	
+	public Book() {
+	
+	} // 기본생성자
+	
+	public Book(String title, int price, double discountRate, String author) {
+		this.title = title;
+		this.price = price;
+		this.discountRate = discountRate;
+		this.author = author;
+	}
+
+
 	@Override
 	public String toString() {
 		return title + "/" + price + "/" + discountRate + "/" +  author ;
 	}
-	
-	public Book() {}
-	
-	public Book(String title, int price, double discountRate, String author) {}
-
-	
 	
 	public String getTitle() {
 		return title;
@@ -50,7 +57,7 @@ public class Book {
 		this.author = author;
 	}
 	
-
+	
 	
 	
 	

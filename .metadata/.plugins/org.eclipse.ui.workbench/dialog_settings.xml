@@ -9,9 +9,9 @@
 	</section>
 	<section name="WorkbenchPreferenceDialog">
 		<item key="DIALOG_X_ORIGIN" value="651"/>
-		<item key="DIALOG_Y_ORIGIN" value="158"/>
-		<item key="DIALOG_WIDTH" value="685"/>
-		<item key="DIALOG_HEIGHT" value="586"/>
+		<item key="DIALOG_Y_ORIGIN" value="124"/>
+		<item key="DIALOG_WIDTH" value="1111"/>
+		<item key="DIALOG_HEIGHT" value="905"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
@@ -27,5 +27,7 @@
 		</list>
 		<list key="textArray">
 		</list>
+	</section>
+	<section name="org.eclipse.ui.preferences.keysPreferencePage">
 	</section>
 </section>
