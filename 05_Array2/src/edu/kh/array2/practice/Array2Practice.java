@@ -14,15 +14,36 @@ public class Array2Practice {
 			for(int k = 0; k < arr[i].length;k++) {
 				
 				arr[i][k]= "("+ i + "," + k +")";
-				str+=arr[i][k];
+//				str+=arr[i][k];
 			}
 		}
+		for(int i = 0; i<arr.length;i++) {
+			for(int k=0; k<arr[i].length; k++) {
+				System.out.print(arr[i][k]);
+			}
+			System.out.println();
+		}
 		
-		System.out.println(str);
 		
 	}
 
 	public void practice2() {
+//		4행 4열짜리 정수형 배열을 선언 및 할당하고
+//		1) 1 ~ 16까지 값을 차례대로 저장하세요.
+//		2) 저장된 값들을 차례대로 출력하세요.
+		int arr[][] = new int[4][4];
+		int num = 1;
+		String str =""; 
+		for(int i = 0; i <arr.length;i++ ) {
+			for(int j = 0; j<arr[i].length;j++) {
+				arr[i][j] = num++;
+				str+= arr[i][j]+" ";
+			}
+		}
 		
+		if(str.length()%4==0) {
+			System.out.println();
+		}
+		System.out.println(str);
 	}
 }
