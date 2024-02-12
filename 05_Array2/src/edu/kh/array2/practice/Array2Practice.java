@@ -156,6 +156,23 @@ public class Array2Practice {
 //		그리고 각 인덱스에 ‘a’부터 총 인덱스의 개수만큼 하나씩 늘려 저장하고 출력하세요.
 		System.out.print("행의 크기");
 		int input = sc.nextInt();
+		char arr[][] = new char[input][];
+		char ch = 'a';
+		
+		for (int i =0; i<arr.length;i++) {
+				System.out.print(i+"열의 크기 : ");
+				int col = sc.nextInt();
+				arr[i] = new char[col];
+		}
+		for ( int i = 0; i< arr.length; i++) {
+			for(int k = 0 ; k<arr[i].length;k++) {
+				arr[i][k]= (char)(ch++);
+				System.out.print(arr[i][k]+ " ");
+			}
+			System.out.println();
+		}
+		
+		
 		
 	}
 }

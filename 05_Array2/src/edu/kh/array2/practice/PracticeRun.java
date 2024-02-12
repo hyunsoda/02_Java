@@ -1,5 +1,7 @@
 package edu.kh.array2.practice;
 
+import edu.kh.array2.practice.service.PracticeService;
+
 public class PracticeRun {
 
 	public static void main(String[] args) {
@@ -11,6 +13,10 @@ public class PracticeRun {
 //		AP.practice4();
 //		AP.practice5();
 		AP.practice6();
+		
+		PracticeService PS = new PracticeService();
+		
+		
 	}
 
 }
