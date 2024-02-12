@@ -26,5 +26,7 @@
     <fullyQualifiedTypeName name="com.kh.practice.snack.controller.SnackController"/>
     <fullyQualifiedTypeName name="com.kh.practice.snack.model.vo.Snack"/>
     <fullyQualifiedTypeName name="com.kh.practice.snack.view.SnackMenu"/>
+    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
+    <fullyQualifiedTypeName name="javax.lang.model.util.ElementScanner7"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

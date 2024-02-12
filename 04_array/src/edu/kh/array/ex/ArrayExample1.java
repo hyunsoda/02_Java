@@ -52,7 +52,7 @@ public class ArrayExample1 {
 		// arr = new int[3];
 		// (int[])   (int[]) -> 같은 자료형 == 연산 가능 (대입연산자를 뜻함/ 자료형이 다르면 대입이 안됨)
 		
-		// (배열 선언할 때 만든 자료형과 선언할 떄 만든 자료형이 같아야 함)
+		// (배열 선언할 때 만든 자료형과 선언할 때 만든 자료형이 같아야 함)
 		
 		// heap영역에 생성된 int[]의 시작 주소를
 		// stack영역에 생성된 arr변수에 대입
@@ -179,6 +179,7 @@ public class ArrayExample1 {
 			// arr[3] = 50;
 			sum += arr[i];
 		}
+		
 		// 최저/최고점==========================
 //		int maxValue = Arrays.stream(arr).max().getAsInt();
 //		System.out.println("최대값:" + maxValue);

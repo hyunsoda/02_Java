@@ -37,7 +37,6 @@ public class VariableExample4 {
 	 	
 	 	int iNum2 = ch; // 자동 형변환 이용
 	 	System.out.println(iNum2); //65
-	 	
 	 	// 강제형변환 이용
 	 	System.out.println((int)ch); //65
 	 	
@@ -52,7 +51,6 @@ public class VariableExample4 {
 	 	int i6 = 2147483647; // int의 최대값
 	 	int result6 = i6 + 1;
 	 	System.out.println(result6); // -2147483648
-	 	
 	}
 
 }

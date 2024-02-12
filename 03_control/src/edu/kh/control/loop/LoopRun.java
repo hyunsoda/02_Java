@@ -1,5 +1,7 @@
 package edu.kh.control.loop;
 
+import java.util.Scanner;
+
 public class LoopRun { // 실행용 클래스
 
 	public static void main(String[] args) {
@@ -12,7 +14,8 @@ public class LoopRun { // 실행용 클래스
 //		forEx.ex6();
 //		forEx.ex7();
 //		forEx.ex8();
-	
+		
+		
 		WhileExample whEx = new WhileExample();
 //		whEx.ex1();
 		whEx.ex2();

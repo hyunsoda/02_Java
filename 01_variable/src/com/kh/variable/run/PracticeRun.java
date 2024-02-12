@@ -17,7 +17,7 @@ public class PracticeRun {
 //		pr.ex2();
 //		
 //		// pr2라는 이름으로 practice2 설계도 수입해 와서 실행
-//		Practice2 pr2 = new Practㄴice2();
+//		Practice2 pr2 = new Practice2();
 //		// pr2 속 ex1 기능 실행
 //		pr2.ex1();
 //		

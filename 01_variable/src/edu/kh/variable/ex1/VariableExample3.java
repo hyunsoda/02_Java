@@ -51,6 +51,9 @@ public class VariableExample3 {
 		int i4 = ch4;
 		System.out.println(i4);
 		
+		char ch5 = '녕';
+		int i6 = ch5;
+		System.out.println(i6);
 		
 		
 		

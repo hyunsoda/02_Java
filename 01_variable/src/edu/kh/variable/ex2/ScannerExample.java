@@ -3,7 +3,7 @@ package edu.kh.variable.ex2;
 import java.util.Scanner;
 
 // Scanner class를 쓰려면 import를 꼭 해줘야 함
-// import구문은 항상 package아래 최상단에 있어햐 한다
+// import구문은 항상 package아래 최상단에 있어야 한다
 // import : 다른 패키지에 존재하는 클래스를 얻어오는 구문
 // import java.util.Scanner : java.util 패키지에서 Scanner 설계도 수입
 
