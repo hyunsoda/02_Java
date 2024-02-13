@@ -152,5 +152,31 @@ public class PracticeService {
 		arr[0][i+1] = i + " ";
 		
 		}
+	int row = 0;
+	int col = 0;
+	while(row != 99) {
+		System.out.print("행 입력 : ");
+		row = sc.nextInt();
+		System.out.print("열 입력 : ");
+		col = sc.nextInt();
+		
+		for(int i = 0; i<arr.length; i++) {
+			for(int k = 0; k<arr.length;k++) {
+				if(i == row && k ==col) {
+					arr[i][k] = "X ";
+					
+					}
+				if(arr[i][k] == null) {
+						arr[i][k] = " ";	
+				}
+				System.out.print(arr[i][k]);
+			}
+			System.out.println();
+		}
+	if(row == 99) {
+		System.out.println("프로그램을 종료합니다");
+		break;
+	}
+	} 
 	}
 }

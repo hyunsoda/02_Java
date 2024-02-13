@@ -22,11 +22,6 @@ public class SnackController {
 	public String confirmData() {
 
 		System.out.println(s.information());
-		s.getKind();
-		s.getName();
-		s.getFlavor();
-		s.getNumOf();
-		s.getPrice();
 		String result = s.getKind() + " (" + s.getName()+"-"+ s.getFlavor()+") "+s.getNumOf()+"개 "+s.getPrice()+"원";
 		return result;
 	}	

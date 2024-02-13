@@ -25,8 +25,7 @@ public class Snack {
 	
 	 // 데이터 리턴
 	public String information() {
-		String assure = "저장한 정보를 확인하겠습니까?(y/n) : y";
-		return assure;
+		return  "저장한 정보를 확인하겠습니까?(y/n) : y";
 		
 		
 	}
