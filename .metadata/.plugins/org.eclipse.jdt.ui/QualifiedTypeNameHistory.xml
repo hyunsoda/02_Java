@@ -14,7 +14,6 @@
     <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.vo.People"/>
     <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.service.AbstractionService"/>
     <fullyQualifiedTypeName name="edu.kh.array2.practice.Array2Practice"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="edu.kh.oop.practice.model.service.HeroService"/>
     <fullyQualifiedTypeName name="edu.kh.oop.practice.model.vo.Hero"/>
     <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.Student"/>
@@ -28,6 +27,9 @@
     <fullyQualifiedTypeName name="com.kh.practice.snack.view.SnackMenu"/>
     <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
     <fullyQualifiedTypeName name="javax.lang.model.util.ElementScanner7"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="edu.kh.array2.practice.service.PracticeService"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.method.model.service.MemberService"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.method.model.vo.Member"/>
 </qualifiedTypeNameHistroy>

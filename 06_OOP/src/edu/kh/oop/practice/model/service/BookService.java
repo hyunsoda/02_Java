@@ -22,10 +22,10 @@ public class BookService {
 		System.out.println("=======================");
 		
 		System.out.println("도서명 = "+ book1.getTitle());
-		System.out.println("할인된 가격 = "+ (int)(book1.getPrice() - (book1.getPrice()*book1.getDiscountRate())));
+		System.out.println("할인된 가격 = "+ (int)(book1.getPrice() - (book1.getPrice()*book1.getDiscountRate()))+ "원");
 	
 		System.out.println("도서명 = "+ book2.getTitle());
-		System.out.println("할인된 가격 = "+ (int)(book2.getPrice() - (book2.getPrice()*book2.getDiscountRate())));
+		System.out.println("할인된 가격 = "+ (int)(book2.getPrice() - (book2.getPrice()*book2.getDiscountRate()))+ "원");
 		
 	}
 }

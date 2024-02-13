@@ -26,8 +26,9 @@ public class SnackMenu {
 		int price = sc.nextInt();
 		
 		
-		scr.saveData(kind, name, flavor, numOf, price);
-		
+		System.out.println(scr.saveData(kind, name, flavor, numOf, price));
+		System.out.println(scr.confirmData());
+	
 		
 	}
 	

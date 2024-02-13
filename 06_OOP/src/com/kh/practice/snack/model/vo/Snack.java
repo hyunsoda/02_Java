@@ -23,12 +23,13 @@ public class Snack {
 		System.out.println("스낵류를 입력하세요.");
 	}
 	
-	// 데이터 리턴
-//	public String information() {
-//		SnackMenu sm1 = new SnackMenu();
-//		
-//		
-//	}
+	 // 데이터 리턴
+	public String information() {
+		String assure = "저장한 정보를 확인하겠습니까?(y/n) : y";
+		return assure;
+		
+		
+	}
 
 	// getter/setter
 	public String getKind() {

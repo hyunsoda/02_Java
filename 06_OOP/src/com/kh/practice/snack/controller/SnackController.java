@@ -13,14 +13,22 @@ public class SnackController {
 		s.setFlavor(flavor);
 		s.setNumOf(numOf);
 		s.setPrice(price);
-		String result ="저장 완료되었습니다.";
-		return result;
+		
+		
+		return "저장이 완료되었습니다";
+	
 	}
 	
-//	public String confirmData() {
-//		String assure = "저장된 정보를 확인하겠습니까(y/n) : ";
-//		char yn		
-//		if()
-//	}
+	public String confirmData() {
+
+		System.out.println(s.information());
+		s.getKind();
+		s.getName();
+		s.getFlavor();
+		s.getNumOf();
+		s.getPrice();
+		String result = s.getKind() + " (" + s.getName()+"-"+ s.getFlavor()+") "+s.getNumOf()+"개 "+s.getPrice()+"원";
+		return result;
+	}	
 	
 }

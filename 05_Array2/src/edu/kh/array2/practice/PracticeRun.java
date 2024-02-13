@@ -12,11 +12,13 @@ public class PracticeRun {
 //		AP.practice3();
 //		AP.practice4();
 //		AP.practice5();
-		AP.practice6();
+//		AP.practice6();
 		
 		PracticeService PS = new PracticeService();
-		
-		
+//		PS.practice7();
+//		PS.practice8();
+//		PS.practice9();
+		PS.practice10();
 	}
 
 }
