@@ -28,8 +28,15 @@
     <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
     <fullyQualifiedTypeName name="javax.lang.model.util.ElementScanner7"/>
     <fullyQualifiedTypeName name="edu.kh.array2.practice.service.PracticeService"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="edu.kh.oop.method.model.service.MemberService"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="edu.kh.oop.method.model.vo.Member"/>
+    <fullyQualifiedTypeName name="edu.kh.oarr.model.vo.Member"/>
+    <fullyQualifiedTypeName name="edu.kh.oarr.model.service.MemberService"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.hw3.model.vo.Product"/>
+    <fullyQualifiedTypeName name="com.hw3.controller.ProductController"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.hw1.model.vo.Employee"/>
+    <fullyQualifiedTypeName name="edu.kh.objarray.practice.model.service.EmployeeService"/>
+    <fullyQualifiedTypeName name="edu.kh.objarray.practice.model.vo.Employee"/>
 </qualifiedTypeNameHistroy>
