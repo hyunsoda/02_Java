@@ -19,11 +19,11 @@ public class MemberController {
 	
 	
 	public int getMemberCount() {
-		return memberCount; 
+		return this.memberCount; 
 	}
 	
 	public Member[] getMem() {
-		return mem; // 주소 값 리턴
+		return this.mem; // 주소 값 리턴
 		
 	}
 
@@ -32,9 +32,9 @@ public class MemberController {
 		
 		// mem에서 매개변수로 전달받은 userId와 동일한 아이디를 가지고 있는 회원을 m에 대입
 		for(int i = 0; i<memberCount;i++) {
-			if(mem[i].getUserId().equals(userId)) 
+			if(userId.equals(mem[i])) 
 				m = mem[i];
-				
+			if(mem[i]==null) break;
 			
 			
 		}
@@ -44,21 +44,38 @@ public class MemberController {
 	
 	public void insertMember(Member m) {
 		// 매개변수로 전달받은 회원정보를 mem객체에 추가
-		mem[memberCount] = new Member(m.getUserId(),m.getUserPwd(),m.getName()
-				,m.getAge(),m.getGender(),m.getEmail());
+		mem[memberCount] = m;
 		
 		memberCount++;
-		System.out.println("성공적으로 회원 등록이 되었습니다");
 	}
 
 	public Member searchMember(int menu, String search) {
 		Member searchMember = null;  // 검색된 회원 정보를 담을 변수 초기화
 		// 매개변수로 전달받은 search 문자열을 menu번호에 따라
+		for(int i =0; i<memberCount; i++) {
+			if(menu == 1) {
+				if(search.equals(mem[i].getUserId())) 
+					searchMember = mem[i];
+				
+			}
+			else if(menu == 2) {
+				if(search.equals(mem[i].getName())) 
+					searchMember = mem[i];
+				
+			}
+			else {
+				if(search.equals(mem[i].getEmail())) 
+					searchMember = mem[i];
+				 
+			}
+		}
 		
+	
 		// 1인 경우 아이디로 검색 후 결과를 searchMember에 대입하고
 		// 2인 경우 이름으로 검색 후 결과를 searchMember에 대입하고
 		// 3인 경우 이메일로 검색 후 결과를 searchMember에 대입하고
-		
+	
+
 		return searchMember;
 		
 	}

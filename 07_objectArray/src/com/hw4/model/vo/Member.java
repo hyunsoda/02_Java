@@ -53,6 +53,7 @@ public class Member {
 	
 	
 	public String information() {
-		return "";
+		return String.format("아이디 : %s, 이름 : %s, 나이 : %d, 성별 : %c, 이메일 : %s",
+				userId, name, age, gender, email ) ;
 	}
 }
