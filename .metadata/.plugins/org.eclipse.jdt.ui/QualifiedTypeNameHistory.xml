@@ -33,12 +33,22 @@
     <fullyQualifiedTypeName name="edu.kh.oarr.model.service.MemberService"/>
     <fullyQualifiedTypeName name="com.hw3.model.vo.Product"/>
     <fullyQualifiedTypeName name="com.hw3.controller.ProductController"/>
-    <fullyQualifiedTypeName name="com.hw1.model.vo.Employee"/>
     <fullyQualifiedTypeName name="edu.kh.objarray.practice.model.service.EmployeeService"/>
     <fullyQualifiedTypeName name="edu.kh.objarray.practice.model.vo.Employee"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="edu.kh.oarr.model.vo.Member"/>
     <fullyQualifiedTypeName name="com.hw4.view.MemberMenu"/>
     <fullyQualifiedTypeName name="com.hw4.controller.MemberController"/>
+    <fullyQualifiedTypeName name="com.hw4.model.vo.Member"/>
+    <fullyQualifiedTypeName name="java.time.Period"/>
+    <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Person"/>
+    <fullyQualifiedTypeName name="edu.kh.inheritance.model.service.InheritanceService"/>
+    <fullyQualifiedTypeName name="com.kh.inheritance.model.dto.SmartPhone"/>
+    <fullyQualifiedTypeName name="com.kh.inheritance.model.dto.BasicPhone"/>
+    <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Student"/>
+    <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Employee"/>
+    <fullyQualifiedTypeName name="com.hw1.model.vo.Student"/>
+    <fullyQualifiedTypeName name="com.hw1.model.vo.Employee"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.hw1.model.vo.Person"/>
 </qualifiedTypeNameHistroy>
