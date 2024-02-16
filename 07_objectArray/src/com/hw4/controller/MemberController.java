@@ -32,7 +32,7 @@ public class MemberController {
 		
 		// mem에서 매개변수로 전달받은 userId와 동일한 아이디를 가지고 있는 회원을 m에 대입
 		for(int i = 0; i<memberCount;i++) {
-			if(userId.equals(mem[i])) 
+			if(userId.equals(mem[i].getUserId())) 
 				m = mem[i];
 			if(mem[i]==null) break;
 			

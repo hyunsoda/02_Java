@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.kh.variable.practice2.Practice1"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="com.kh.variable.practice2.Practice2"/>
-    <fullyQualifiedTypeName name="com.kh.variable.practice2.Practice3"/>
-    <fullyQualifiedTypeName name="edu.kh.op.ex.OpExample"/>
-    <fullyQualifiedTypeName name="edu.kh.op.practice.OperatorPractice"/>
-    <fullyQualifiedTypeName name="edu.kh.op.practice.OperatorPractice2"/>
-    <fullyQualifiedTypeName name="edu.kh.control.condition.ConditionExample"/>
-    <fullyQualifiedTypeName name="edu.kh.array.practice.service.PracticeService"/>
-    <fullyQualifiedTypeName name="java.util.Collection"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.vo.People"/>
-    <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.service.AbstractionService"/>
     <fullyQualifiedTypeName name="edu.kh.array2.practice.Array2Practice"/>
     <fullyQualifiedTypeName name="edu.kh.oop.practice.model.service.HeroService"/>
     <fullyQualifiedTypeName name="edu.kh.oop.practice.model.vo.Hero"/>
@@ -51,5 +38,26 @@
     <fullyQualifiedTypeName name="com.hw1.model.vo.Employee"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.hw1.model.vo.Person"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Car"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Tesla"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Spark"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.service.PolyService"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.AbstractService"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.vo.Animal"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.vo.Fish"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.Calculator"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.ASHCalculator"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.HGDCalculator"/>
+    <fullyQualifiedTypeName name="com.hw1.model.dto.Book"/>
+    <fullyQualifiedTypeName name="com.hw1.model.dto.Novel"/>
+    <fullyQualifiedTypeName name="com.hw1.model.dto.Textbook"/>
+    <fullyQualifiedTypeName name="com.hw1.model.dto.Poetry"/>
+    <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.vo.Person"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.hw2.model.service.Company"/>
+    <fullyQualifiedTypeName name="com.hw2.model.dto.Person"/>
+    <fullyQualifiedTypeName name="com.hw2.model.dto.Employee"/>
+    <fullyQualifiedTypeName name="com.hw2.model.dto.Prisoner"/>
+    <fullyQualifiedTypeName name="com.hw2.model.service.Prison"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
