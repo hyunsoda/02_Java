@@ -123,7 +123,20 @@ public class MemberMenu {
 	}
 
 	public void updateMember() {
-		
+		while(true) {
+			System.out.println("1. 비밀번호 수정");
+			System.out.println("2. 이름 수정");
+			System.out.println("3. 이메일 수정");
+			System.out.println("9. 이전 메뉴로");
+			
+			System.out.print("메뉴 선택 : ");
+			int menu = sc.nextInt();
+			System.out.print("변경할 회원 아이디");
+			String userId = sc.next();
+			
+			mc.updateMember(m, menu, userId);
+			
+		}
 	}
 
 	public void deleteMember() {
