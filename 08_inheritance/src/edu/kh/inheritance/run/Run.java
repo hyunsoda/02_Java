@@ -8,7 +8,7 @@ public class Run {
 		
 //		new InheritanceService().ex1();
 //		new InheritanceService().ex2();
-//		new InheritanceService().ex3();
+		new InheritanceService().ex3();
 		new InheritanceService().ex4();
 	}
 
