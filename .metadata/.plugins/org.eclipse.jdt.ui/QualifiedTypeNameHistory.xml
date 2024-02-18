@@ -7,7 +7,6 @@
     <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.TestVO"/>
     <fullyQualifiedTypeName name="edu.kh.oop.cls.model.service.ClsService"/>
     <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.User"/>
-    <fullyQualifiedTypeName name="com.kh.practice.snack.view.SnackMenu"/>
     <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
     <fullyQualifiedTypeName name="javax.lang.model.util.ElementScanner7"/>
     <fullyQualifiedTypeName name="edu.kh.array2.practice.service.PracticeService"/>
@@ -16,9 +15,7 @@
     <fullyQualifiedTypeName name="edu.kh.oarr.model.service.MemberService"/>
     <fullyQualifiedTypeName name="com.hw3.model.vo.Product"/>
     <fullyQualifiedTypeName name="com.hw3.controller.ProductController"/>
-    <fullyQualifiedTypeName name="edu.kh.objarray.practice.model.service.EmployeeService"/>
     <fullyQualifiedTypeName name="edu.kh.objarray.practice.model.vo.Employee"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="edu.kh.oarr.model.vo.Member"/>
     <fullyQualifiedTypeName name="com.hw4.view.MemberMenu"/>
     <fullyQualifiedTypeName name="com.hw4.controller.MemberController"/>
@@ -26,12 +23,8 @@
     <fullyQualifiedTypeName name="java.time.Period"/>
     <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Person"/>
     <fullyQualifiedTypeName name="edu.kh.inheritance.model.service.InheritanceService"/>
-    <fullyQualifiedTypeName name="com.kh.inheritance.model.dto.SmartPhone"/>
-    <fullyQualifiedTypeName name="com.kh.inheritance.model.dto.BasicPhone"/>
     <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Student"/>
     <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Employee"/>
-    <fullyQualifiedTypeName name="com.hw1.model.vo.Student"/>
-    <fullyQualifiedTypeName name="com.hw1.model.vo.Employee"/>
     <fullyQualifiedTypeName name="com.hw1.model.vo.Person"/>
     <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Car"/>
     <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Tesla"/>
@@ -44,9 +37,6 @@
     <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.ASHCalculator"/>
     <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.HGDCalculator"/>
     <fullyQualifiedTypeName name="com.hw1.model.dto.Book"/>
-    <fullyQualifiedTypeName name="com.hw1.model.dto.Novel"/>
-    <fullyQualifiedTypeName name="com.hw1.model.dto.Textbook"/>
-    <fullyQualifiedTypeName name="com.hw1.model.dto.Poetry"/>
     <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.vo.Person"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.hw2.model.service.Company"/>
@@ -58,6 +48,16 @@
     <fullyQualifiedTypeName name="edu.kh.oop.practice.model.vo.Book"/>
     <fullyQualifiedTypeName name="edu.kh.oop.practice.model.service.BookService"/>
     <fullyQualifiedTypeName name="com.kh.practice.snack.model.vo.Snack"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.kh.practice.snack.controller.SnackController"/>
+    <fullyQualifiedTypeName name="com.kh.practice.snack.view.SnackMenu"/>
+    <fullyQualifiedTypeName name="edu.kh.objarray.practice.model.service.EmployeeService"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.kh.inheritance.model.dto.BasicPhone"/>
+    <fullyQualifiedTypeName name="com.kh.inheritance.model.dto.SmartPhone"/>
+    <fullyQualifiedTypeName name="com.hw1.model.vo.Student"/>
+    <fullyQualifiedTypeName name="com.hw1.model.vo.Employee"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.hw1.model.dto.Novel"/>
+    <fullyQualifiedTypeName name="com.hw1.model.dto.Textbook"/>
+    <fullyQualifiedTypeName name="com.hw1.model.dto.Poetry"/>
 </qualifiedTypeNameHistroy>
