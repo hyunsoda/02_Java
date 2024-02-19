@@ -8,15 +8,6 @@ import java.util.Scanner;
 
 import edu.kh.collection.model.vo.Student;
 
-/**
- * 
- */
-/**
- * 
- */
-/**
- * 
- */
 public class StudentService {
 
 	// 필드
@@ -292,7 +283,7 @@ public class StudentService {
 			int score = sc.nextInt();
 			
 			// 입력받은 index번째에 새로운 학생 정보(위에 입력받은 값)를 세팅 == 수정
-			// index 번째에 잇던 기존 학생 정보가 반환되고, 그 객체를 temp에 저장한다.
+			// index 번째에 있던 기존 학생 정보가 반환되고, 그 객체를 temp에 저장한다.
 			Student temp = studentList.set(index, new Student(name, age, region, gender, score));
 				// 기존 학생 정보가 필요없으면 안 담아도 된다 (Student temp)
 			
@@ -370,16 +361,19 @@ public class StudentService {
 		
 		if(studentList.isEmpty()) {
 			System.out.println("입력된 학생 정보가 없습니다.");
-		}
+		}else {
+			System.out.print("검색할 이름을 입력해주세요. :");
+			String name = sc.next();
 
-		
-		
-		System.out.print("이름 입력 : ");
-		String stdName = sc.next();
-		
-		for(Student std:studentList) {
-			if(stdName.equals(std.getName()))
-			System.out.println(std); // toString() 이용해서 나온다 (Student에 Override해놓음)
+			for(Student std:studentList) {
+				if(name.equals(std.getName())) {
+					System.out.println(std);
+					return;
+				} else {
+					System.out.println("검색 결과가 없습니다.");
+					return;
+			}
+		}
 		}
 		
 	}
@@ -397,13 +391,20 @@ public class StudentService {
 		// boolean String.contains(문자열) : String에 문자열이 포함되어 있으면 true/ 없으면 false
 		if(studentList.isEmpty()) {
 			System.out.println("입력된 학생 정보가 없습니다.");
-		}
-		System.out.print("이름 입력 : ");
-		String stdName = sc.next();
 		
-		for(Student std:studentList) {
-			if(std.getName().contains(stdName))
-			System.out.println(std); // toString() 이용해서 나온다 (Student에 Override해놓음)
+		}else {
+			
+			System.out.print("검색할 문자열을 입력해주세요. : ");
+			String name = sc.next();
+			for(Student std : studentList) {
+				if(std.getName().contains(name)) {
+					System.out.println(std);
+					return;
+				}else {
+					System.out.println("일치하는 결과가 없습니다.");
+					return;
+				}
+			}
 		}
 		
 	}
