@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="edu.kh.array2.practice.service.PracticeService"/>
-    <fullyQualifiedTypeName name="edu.kh.oop.method.model.service.MemberService"/>
-    <fullyQualifiedTypeName name="edu.kh.oop.method.model.vo.Member"/>
-    <fullyQualifiedTypeName name="edu.kh.oarr.model.service.MemberService"/>
-    <fullyQualifiedTypeName name="com.hw3.model.vo.Product"/>
-    <fullyQualifiedTypeName name="com.hw3.controller.ProductController"/>
-    <fullyQualifiedTypeName name="edu.kh.objarray.practice.model.vo.Employee"/>
-    <fullyQualifiedTypeName name="edu.kh.oarr.model.vo.Member"/>
-    <fullyQualifiedTypeName name="com.hw4.view.MemberMenu"/>
-    <fullyQualifiedTypeName name="com.hw4.controller.MemberController"/>
-    <fullyQualifiedTypeName name="com.hw4.model.vo.Member"/>
-    <fullyQualifiedTypeName name="java.time.Period"/>
-    <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Person"/>
-    <fullyQualifiedTypeName name="edu.kh.inheritance.model.service.InheritanceService"/>
-    <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Student"/>
-    <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Employee"/>
-    <fullyQualifiedTypeName name="com.hw1.model.vo.Person"/>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Car"/>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Tesla"/>
     <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Spark"/>
     <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.service.PolyService"/>
     <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.AbstractService"/>
@@ -54,10 +35,29 @@
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="edu.kh.collection.model.vo.Student"/>
     <fullyQualifiedTypeName name="edu.kh.collection.model.service.StudentService"/>
+    <fullyQualifiedTypeName name="com.hw1.model.dto.Friend"/>
+    <fullyQualifiedTypeName name="com.hw2.model.service.Zoo"/>
+    <fullyQualifiedTypeName name="com.hw2.model.dto.Tiger"/>
+    <fullyQualifiedTypeName name="com.hw2.model.dto.Monkey"/>
+    <fullyQualifiedTypeName name="com.hw2.model.dto.Animal"/>
+    <fullyQualifiedTypeName name="com.hw3.model.service.BookService"/>
+    <fullyQualifiedTypeName name="com.hw3.model.dto.Book"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="edu.kh.collection.pack2.model.vo.Person"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.Objects"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.TreeSet"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="edu.kh.collection.pack2.model.service.SetService"/>
 </qualifiedTypeNameHistroy>
