@@ -356,26 +356,48 @@ public class StudentService {
 	 * - 일치하는 경우 Student 객체 출력
 	 * - 검색 결과가 없습니다 출력
 	 */
-	public void searchName1() {
-		System.out.println("========이름으로 검색 (일치)=========");
-		
-		if(studentList.isEmpty()) {
-			System.out.println("입력된 학생 정보가 없습니다.");
-		}else {
-			System.out.print("검색할 이름을 입력해주세요. :");
-			String name = sc.next();
+//	public void searchName1() {
+//		System.out.println("========이름으로 검색 (일치)=========");
+//		
+//		if(studentList.isEmpty()) {
+//			System.out.println("입력된 학생 정보가 없습니다.");
+//		}else {
+//			System.out.print("검색할 이름을 입력해주세요. :");
+//			String name = sc.next();
+//
+//			for(Student std:studentList) {
+//				if(name.equals(std.getName())) {
+//					System.out.println(std);
+//					return;
+//				} else {
+//					System.out.println("검색 결과가 없습니다.");
+//					return;
+//			}
+//		}
+//		}
+//		
+//	}
 
-			for(Student std:studentList) {
-				if(name.equals(std.getName())) {
-					System.out.println(std);
-					return;
-				} else {
-					System.out.println("검색 결과가 없습니다.");
-					return;
-			}
-		}
-		}
+	// 예시
+	public void searchName1() {
+		System.out.println("=======학생 검색 (이름 완전 일치)=========");
 		
+		System.out.print("검색할 이름 입력 : ");
+		String input = sc.next();
+		 boolean flag = true;
+		 
+		 // 향상된 for문
+		 for(Student std : studentList) {
+			 if(input.equals(std.getName())) { // 일치하는 경우
+				 System.out.println(std); // toString() 오버라이딩
+				 
+				 flag = false;
+			 }
+		 }
+		 
+		 if(flag) {
+			 System.out.println("검색 결과가 없습니다.");
+		 }
 	}
 	
 	/**
@@ -384,28 +406,55 @@ public class StudentService {
 	 * - 포함되는 경우  Student 객체 출력
 	 * - 검색 결과가 없습니다 출력
 	 */
+//	public void searchName2() {
+//		System.out.println("========이름으로 검색 (포함)=========");
+//		
+//		
+//		// boolean String.contains(문자열) : String에 문자열이 포함되어 있으면 true/ 없으면 false
+//		if(studentList.isEmpty()) {
+//			System.out.println("입력된 학생 정보가 없습니다.");
+//		
+//		}else {
+//			
+//			System.out.print("검색할 문자열을 입력해주세요. : ");
+//			String name = sc.next();
+//			for(Student std : studentList) {
+//				if(std.getName().contains(name)) {
+//					System.out.println(std);
+//					return;
+//				}else {
+//					System.out.println("일치하는 결과가 없습니다.");
+//					return;
+//				}
+//			}
+//		}
+//		
+//	}
+	
+	
+	// 예시
 	public void searchName2() {
 		System.out.println("========이름으로 검색 (포함)=========");
+
+		System.out.println("이름에 포함되는 문자열 입력 : ");
+		String input = sc.next();
 		
+		boolean flag = true;
 		
-		// boolean String.contains(문자열) : String에 문자열이 포함되어 있으면 true/ 없으면 false
-		if(studentList.isEmpty()) {
-			System.out.println("입력된 학생 정보가 없습니다.");
-		
-		}else {
+		for(Student std : studentList) {
 			
-			System.out.print("검색할 문자열을 입력해주세요. : ");
-			String name = sc.next();
-			for(Student std : studentList) {
-				if(std.getName().contains(name)) {
-					System.out.println(std);
-					return;
-				}else {
-					System.out.println("일치하는 결과가 없습니다.");
-					return;
-				}
+			if(std.getName().contains(input)) {
+				System.out.println(std);
+				flag = false;
 			}
 		}
+		if(flag) {
+			System.out.println("검색결과가 없습니다.");
+		}
+		
 		
 	}
+	
+	
+	
 }
