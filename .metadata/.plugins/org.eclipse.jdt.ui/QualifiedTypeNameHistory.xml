@@ -13,7 +13,6 @@
     <fullyQualifiedTypeName name="com.kh.practice.snack.controller.SnackController"/>
     <fullyQualifiedTypeName name="com.kh.practice.snack.view.SnackMenu"/>
     <fullyQualifiedTypeName name="edu.kh.objarray.practice.model.service.EmployeeService"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="com.kh.inheritance.model.dto.BasicPhone"/>
     <fullyQualifiedTypeName name="com.kh.inheritance.model.dto.SmartPhone"/>
     <fullyQualifiedTypeName name="com.hw1.model.vo.Student"/>
@@ -34,7 +33,6 @@
     <fullyQualifiedTypeName name="com.hw2.model.dto.Animal"/>
     <fullyQualifiedTypeName name="com.hw3.model.service.BookService"/>
     <fullyQualifiedTypeName name="com.hw3.model.dto.Book"/>
-    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
@@ -45,7 +43,6 @@
     <fullyQualifiedTypeName name="edu.kh.collection.pack2.model.service.SetService"/>
     <fullyQualifiedTypeName name="java.lang.LinkageError"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="javax.annotation.processing.AbstractProcessor"/>
     <fullyQualifiedTypeName name="java.util.TreeSet"/>
     <fullyQualifiedTypeName name="edu.kh.collection.pack3.model.service.MapService"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
