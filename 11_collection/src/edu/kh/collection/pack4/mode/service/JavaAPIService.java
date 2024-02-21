@@ -222,7 +222,72 @@ public class JavaAPIService {
 		System.out.println("efg temp2 : " + System.identityHashCode(temp2));
 		// 기존 temp2 해시코드와 다르다 --> 다른 객체
 		
+	}
+
+	
+	
+	/**
+	 * StringBuilder / StringBuffer 클래스
+	 * - Stringd의 불변성 문제를 해결한 클래스
+	 * -> 가변성(mutable)
+	 * 
+	 * - 기본 16글자 저장할 크기로 생성
+	 * 	 저장되는 문자열의 길이에 따라 크기가 증가/감소
+	 * 	 -> 마음대로 문자열 수정, 삭제 가능!
+	 * 	 -> 수정, 삭제를 해도 추가적인 객체 생성이 없어 효율 좋음!
+	 * 
+	 * - StringBuilder : Thread Safe 미제공 (비동기) 
+	 * 											동기화 사용 X
+	 * 	    : 속도면에서는 StringBuffer 보다 성능 좋음
+	 * 		-> 멀티쓰레드 환경에서는 StringBuilder 사용 시 
+	 * 		   thread 충동 가능성 있음 -> 글자가 깨지거나 오류가 발생..
+	 * 		-> 단일 thread 환경에서 유리 ( 추천 )
+	 * 
+	 * 
+	 * - StringBuffer : Thread Safe 제공 (동기)
+	 * 		: 속도면에서는 StringBuilder 보다 성능 떨어짐
+	 * 		-> 멀티thread 환경에서 안전하게 동작할 수 있음
+	 * 		-> 멀티thread 환경에서 유리
+	 * 
+	 * 				동기 : A파트 일을 모두 마치고 다음 파트 일을 함
+	 * 					  일을 순서대로 하고 끝나면 다음 시작
+	 * 					  - thread 안정 // thread를 줄 세움
+	 * 				비동기 : 앞 작업 끝내든 말든 상관 없이 
+	 * 						 여유 생기면 다른 파트 일 시작
+	 * 						 줄 세우지 않고 공동으로 작업
+	 * 						- thread 안전성이 떨어짐 // 여러 명이 서로 먼저 일할래!
+	 * 
+	 *    Thread : 일꾼 개념  / thread가 많다  -> multithread
+	 *    자바 : 멀티 쓰레드 환경 제공은 함  (new Thread()...-> 멀티 쓰레드, main쓰레드 하나 -> 단일 쓰레드)
+	 */
+	public void method6() {
+		// 문자열 변경이 자주 필요할 경우 String을 사용하면 성능이 떨어진다.
+		// => StringBuilder, StringBuffer 사용
+			// -> 가변성의 특징을 가짐 (mutable) => 할당된 공간이 변한다
 		
+		
+		// StringBuilder 객체 생성
+		StringBuilder sb = new StringBuilder();
+		
+		// StringBuilder 객체에 문자열을 쌓아 나가는 방식으로 사용
+		// -> 뒤에 추가 (append), 앞에 추가(insert)
+		sb.append("오늘 점심은 "); // "오늘 점심은 "
+		System.out.println(System.identityHashCode(sb)); // 1865127310
+		
+		sb.append("무엇을 먹을까요?"); // "오늘 점심은 무엇을 먹을까요?"
+		System.out.println(System.identityHashCode(sb)); // 1865127310 -> 기존 객체를 바꿈
+		
+		
+		sb.insert(0, "2월 21일 "); // 인덱스 번호, 추가할 문자열 
+								  // 0번 인덱스 삽입 == 제일 앞에 추가	
+		System.out.println(System.identityHashCode(sb)); // 1865127310
+		
+		System.out.println(sb);
+		// 같은 객체 변화
 		
 	}
+	
+	
+	
+	
 }

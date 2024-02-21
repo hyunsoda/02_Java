@@ -11,7 +11,8 @@ public class JavaAPIRun {
 //		service.method2();
 //		service.method3();
 //		service.method4();
-		service.method5();
+//		service.method5();
+		service.method6();
 	}
 
 }
