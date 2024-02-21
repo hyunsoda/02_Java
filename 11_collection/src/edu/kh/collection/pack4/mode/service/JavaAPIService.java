@@ -1,5 +1,6 @@
 package edu.kh.collection.pack4.mode.service;
 
+import java.nio.file.spi.FileSystemProvider;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -284,6 +285,35 @@ public class JavaAPIService {
 		
 		System.out.println(sb);
 		// 같은 객체 변화
+		
+		// identityHashCode 값이 일정함
+		// == 참조하는 객체가 변하지 않음
+		// == 객체 내에 값만 수정되고 있다 == 가변성
+		
+		// StringBuilder -> String 변환
+		String temp = sb.toString(); // 객체에 저장된 필드를 문자열로 반환
+		
+		// String[] 문자열.split("구분자")
+		// - 문자열을 "구분자"를 기준으로 쪼개어 String[]로 반환
+		// "2월 21일 오늘 점심은 무엇을 먹을까요?
+		String[] arr = temp.split(" "); // 띄어쓰기를 기준으로 arr에 쪼개어 들어가진다
+		
+		for(String str : arr) {
+			System.out.println(str);
+		}
+		
+		System.out.println("======================"); 
+		
+		// equalsIgnoreCase() : 문자열을 비교할 때 대소문자 무시하고 비교하는 메서드
+		String str1 = "hello";
+		String str2 = "HELLO";
+		
+		if(str1.equalsIgnoreCase(str2)) {
+			System.out.println("두 문자열은 동일합니다");
+		} else {
+			System.out.println("두 문자열은 다릅니다!");
+		}
+		
 		
 	}
 	
