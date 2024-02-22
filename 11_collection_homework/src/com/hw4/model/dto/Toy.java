@@ -3,6 +3,7 @@ package com.hw4.model.dto;
 import java.util.Objects;
 
 public class Toy {
+	// 내가 작성한 답
 
 	private String name;
 	private int age;

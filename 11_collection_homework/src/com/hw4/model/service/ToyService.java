@@ -18,6 +18,8 @@ import com.hw4.model.dto.Toy;
 
 
 public class ToyService {
+	// 내가 작성한 답
+	
 	private Set<Toy> toy = new HashSet<Toy>();
 	// 리스트로 만들어서 set에 넣기
 	
@@ -117,7 +119,12 @@ public class ToyService {
 			System.out.println("재료를 입력하세요 (종료하려면 'q'를 입력하세요) : ");
 			ingredient = sc.next();
 			if(ingredient.toUpperCase().charAt(0)!= 'Q') {
-				sum += ingredient;
+				if(sum.contains(ingredient)) {
+					System.out.println("중복된 재료입니다.");
+				}else {
+						sum += ingredient;
+				}
+			
 			}
 			
 		} while(ingredient.toUpperCase().charAt(0)!= 'Q') ;
@@ -219,7 +226,7 @@ public class ToyService {
 		}
 		
 		ingredlist.put(key, name);
-		return "재료가 성공적으로 덮어쓰기 되었습니다.";
+		return "재료가 성공적으로 등록 되었습니다.";
 		
 		
 	}
