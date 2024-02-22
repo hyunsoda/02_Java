@@ -2,6 +2,7 @@ package edu.kh.IO.pack1.model.service;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 
 public class FileService {
 
@@ -116,11 +117,6 @@ public class FileService {
 				}
 			}
 			
-			
-			
-			
-			
-			
 		}catch(IOException e) {
 			e.printStackTrace(); // 예외 정보 + 예외가 발생한 위치까지의 메서드 추적
 		}
@@ -129,7 +125,63 @@ public class FileService {
 		
 		
 	}
+
 	
+	/**
+	 * File 클래스 제공 메서드 활용하기
+	 */
+	public void method3() {
+		
+		// File 객체 생성
+		File directory = new File("\\workspace\\02_Java\\12_IO");
+		
+		// 지정된 디렉토리에 있는 모든 파일 / 디렉토리를 File[] 형태로 얻어오기
+		File[] files = directory.listFiles();
+		
+		// 향상된 for문 -> for(요소 저장 변수 : 배열 | 컬렉션){}
+		for(File f : files) {
+			
+			// String File.toString() : 지정된 파일/디렉토리의 절대경로
+			// System.out.println(f.toString());
+			
+			// 파일명
+			String fileName = f.getName();
+			
+			// 마지막으로 수정한 날짜
+			long lastModified = f.lastModified(); // 반환형이 long타입
+								// 다른객체한테 전달하는 형식으로 바꿔야 함
+			// System.out.println(lastModified);
+			
+			
+			// java.text.SimpleDateFormat : 간단히 날짜 형식을 지정할 수 있는 객체
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd a h:mm");
+														// 2024-02-22 오후 2:14
+			
+			// String SimplDateFormat.format(long) :  
+			// 매개변수 long값을 지정된 패턴 형식으로 변화하여 
+			// 문자열 형태로 반환
+			String date = sdf.format(lastModified);
+			// System.out.println(date);
+			
+			// 파일 유형
+			String type = null;
+			if(f.isFile()) type = "파일";
+			else			type = "폴더";
+			
+			// 파일 크기(byte)
+			String size = f.length() + "B";
+			if(f.isDirectory()) size = ""; // 폴더명 ""변경
+			
+			String result
+				= String.format("%-20s %-20s %-5s %10s", fileName, date, type, size);
+			System.out.println(result);
+			
+			
+			
+		}
+		
+		
+	}
 	
 	
 

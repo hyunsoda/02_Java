@@ -8,7 +8,8 @@ public class FileRun {
 
 		FileService service = new FileService();
 //		service.method1();
-		service.method2();
+//		service.method2();
+		service.method3();
 	}
 
 }
