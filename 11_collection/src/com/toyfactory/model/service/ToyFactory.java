@@ -88,9 +88,8 @@ public class ToyFactory {
 			case 7 : removeMaterialByName(); break;
 			case 0 : System.out.println("프로그램을 종료합니다.");break;
 			default : System.out.println("잘못된 입력입니다. 다시 입력해주세요.");
-			
-			
 			}
+			
 		}catch(Exception e) {
 			System.out.println("알맞은 입력을 해라...(경고)..");
 			
