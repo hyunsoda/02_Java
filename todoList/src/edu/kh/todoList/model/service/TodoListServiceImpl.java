@@ -37,7 +37,7 @@ public class TodoListServiceImpl implements TodoListService{
 		
 		// 1. 할 일 목록 DAO에서 얻어오기
 		List<Todo> todoList = dao.todoListFullView(); // todoList 반환
-		
+	
 		// 2. 할 일 목록에서 완료(complete 필드 값이 true)인 요소가 몇 개인지 카운트
 		int completeCount = 0;
 		
