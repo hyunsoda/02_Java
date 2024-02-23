@@ -485,7 +485,7 @@ public class StudentService {
 		// => Student 클래스의 getName() 메서드를 가리키는 것.
 		// -> 이 메서드를 비교의 키로 사용하여 각 Student 객체를 비교하고 정렬함.
 		// ==> Comparator.comparing(Student::getName)은 이름(name)을 기준으로 
-		// 		학생(Student) 객체를 바교하는 Comparator 객체를 생성한 것
+		// 		학생(Student) 객체를 비교하는 Comparator 객체를 생성한 것
 		
 		// 여러 개 생성 가능
 		
