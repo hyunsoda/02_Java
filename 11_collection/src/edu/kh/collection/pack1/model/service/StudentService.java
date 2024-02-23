@@ -66,7 +66,7 @@ public class StudentService {
 			System.out.println(((Student)studentList.get(0)).getName()); // toString() 오버라이딩 한 형태로 나오고 있다.
 			// 반환형으로 얻어온 건 Object타입 getName은 student타입	=> 강제 형변환 필요
 		}
-
+		
 		System.out.println(studentList.get(1));
 		System.out.println(studentList.get(2));
 		System.out.println(studentList.get(3)); // object의 주소값
