@@ -3,7 +3,10 @@ package edu.kh.todoList.view;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.List;
+import java.util.Map;
 
+import edu.kh.todoList.model.dto.Todo;
 import edu.kh.todoList.model.service.TodoListService;
 import edu.kh.todoList.model.service.TodoListServiceImpl;
 
@@ -53,7 +56,7 @@ public class TodoListView {
 				input = selectMenu(); // 출력하는 메소드
 				
 				switch(input) {
-//				case 1 : todoListFullView(); break;
+				case 1 : todoListFullView(); break;
 //				case 2 : todoDetailView(); break;
 //				case 3 : todoAdd(); break;
 //				case 4 : todoComplete(); break;
@@ -65,6 +68,7 @@ public class TodoListView {
 				
 				}
 				
+				System.out.println("========================================");
 				
 				
 			}catch(NumberFormatException e) {
@@ -114,7 +118,54 @@ public class TodoListView {
 		// IOException은 입출력 관련 exception
 	}
 	
+	// ========================================================
 	
+	/**
+	 * 할 일 목록 모두 보기
+	 */
+	public void todoListFullView() {
+		
+		System.out.println("\n=========[1. Todo List Full View]============\n");
+		
+		// 할 일 목록 + 완료된 개수 카운트한 값 얻어오기
+		// (List)		 (int)
+		Map<String, Object> map = service.todoListFullView(); // todoListFullView() 반환값은 map
+		// value값이 list(할 일 목록)가 될 수도, int(완료된 개수)가 될 수도 있다
+		
+		// 반환 받은 map요소 해체하기
+		List<Todo> todoList = (List<Todo>)map.get("todoList");
+		int completeCount = (int)map.get("completeCount");
+			//	Map받을 때 object로 반환됐기 때문에 다운캐스팅해야 한다
+		
+		
+		
+		// 출력
+		System.out.printf("[ 완료된 Todo 개수 / 전체 Todo 수 : %d / %d ]\n"
+				, completeCount, todoList.size());
+		System.out.println("--------------------------------------------------------------------");
+		System.out.printf("%-3s %10s   %10s     %s\n", "인덱스", "등록일", "완료여부", "할 일 제목");
+		System.out.println("--------------------------------------------------------------------");
+		
+		// for문에서 사용할 변수를 ,를 이용해서 여러개 설정가능
+		// len = todoList.size(); i < len;  == i<todoList.size();
+		for(int i=0, len = todoList.size(); i < len; i++) {
+		
+			String title = todoList.get(i).getTitle();
+			
+			String completeYN = todoList.get(i).isComplete() ? "O" : "X";
+			
+			String regDate = service.dateFormat(todoList.get(i).getRegDate());
+			
+			System.out.printf("[%3d]  %20s    (%s)       %s\n", i, regDate, completeYN, title);
+		}
+
+
+
+		
+		
+		
+		
+	}
 	
 	
 	

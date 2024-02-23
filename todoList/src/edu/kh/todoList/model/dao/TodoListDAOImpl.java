@@ -89,6 +89,14 @@ public class TodoListDAOImpl implements TodoListDAO{
 		
 		
 	}
+
+
+	@Override
+	public List<Todo> todoListFullView() {
+
+		
+		return todoList;
+	}
 	
 	
 }

@@ -12,7 +12,7 @@ public class TodoListRun {
 		// Run <-> View <-> Service <-> DAO <-> File
 		
 		TodoListView view = new TodoListView();
-		
+		view.startView();
 		
 		
 	}
