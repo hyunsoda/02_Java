@@ -25,7 +25,6 @@ public class SetService {
 	 * 1. HashSet (대표) : 처리 속도가 빠른 Set
 	 * 2. LinkedHashSet : 순서를 유지하는 Set
 	 * 3. TreeSet : 자동 정렬되는 Set
-	 * 
 	 * */
 	
 	
