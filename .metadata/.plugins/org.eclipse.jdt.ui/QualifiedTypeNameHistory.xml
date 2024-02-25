@@ -7,7 +7,6 @@
     <fullyQualifiedTypeName name="java.lang.LinkageError"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="javax.annotation.processing.AbstractProcessor"/>
-    <fullyQualifiedTypeName name="java.util.TreeSet"/>
     <fullyQualifiedTypeName name="edu.kh.collection.pack3.model.service.MapService"/>
     <fullyQualifiedTypeName name="java.security.KeyStore.Entry"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
@@ -18,7 +17,6 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.toyfactory.model.dto.Toy"/>
-    <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="com.toyfactory.model.service.ToyFactory"/>
@@ -51,13 +49,15 @@
     <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicFileChooserUI"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="edu.kh.todoList.model.service.TodoListServiceImpl"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="edu.kh.todoList.model.dto.Todo"/>
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.TreeSet"/>
 </qualifiedTypeNameHistroy>

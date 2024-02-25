@@ -229,7 +229,7 @@ public class JavaAPIService {
 	
 	/**
 	 * StringBuilder / StringBuffer 클래스
-	 * - Stringd의 불변성 문제를 해결한 클래스
+	 * - String의 불변성 문제를 해결한 클래스
 	 * -> 가변성(mutable)
 	 * 
 	 * - 기본 16글자 저장할 크기로 생성
