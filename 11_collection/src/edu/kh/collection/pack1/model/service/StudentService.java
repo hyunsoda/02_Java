@@ -131,7 +131,7 @@ public class StudentService {
 				System.out.println("\nerror : 입력형식이 유효하지 않습니다. 다시 시도해주세요.");
 				sc.nextLine(); // 입력 버퍼에 남아있는 잘못된 코드 제거
 				// menuNum에는 0이 남아서 잘못입력하면 종료될 것
-				menuNum = -1; // 첫 반복시 잘못 입려하는 경우
+				menuNum = -1; // 첫 반복시 잘못 입력하는 경우
 				// menuNum이 0을 가지고 있어 종료되는데,
 				// 이를 방지하기 위해 임의값 -1대입
 			}
