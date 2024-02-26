@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 import edu.kh.todoList.model.dto.Todo;
 import edu.kh.todoList.model.service.TodoListService;
@@ -57,7 +58,7 @@ public class TodoListView {
 				
 				switch(input) {
 				case 1 : todoListFullView(); break;
-//				case 2 : todoDetailView(); break;
+				case 2 : todoDetailView(); break;
 //				case 3 : todoAdd(); break;
 //				case 4 : todoComplete(); break;
 //				case 5 : todoUpdate(); break;
@@ -159,14 +160,49 @@ public class TodoListView {
 			System.out.printf("[%3d]  %20s    (%s)       %s\n", i, regDate, completeYN, title);
 		}
 
-
-
-		
-		
-		
-		
 	}
 	
+	//===============================================================
+	
+	
+	/** 할 일 상세 조회 (인덱스 번호 입력 받기)
+	 * 
+	 */
+	public void todoDetailView() throws IOException{
+		System.out.println("\n=========[2. Todo Detail View]============\n");
+		System.out.println();
+		
+		
+		System.out.print("인덱스 번호 입력 : ");
+		int index = Integer.parseInt(br.readLine());
+		
+		// 할 일 상세 조회 서비스 호출 후 결과 반환 받기
+		List<Todo> list = service.todoDetailView(index);
+		
+		System.out.println("==========================");
+		
+		
+			System.out.print("제목 : ");
+			System.out.println(list.get(index).getTitle());
+			
+			System.out.print("등록일 : ");
+			String regDate = service.dateFormat(list.get(index).getRegDate());
+			System.out.println(regDate);
+			
+			System.out.print("완료여부 : ");
+			if(list.get(index).isComplete()==true) {
+				System.out.println("O");
+			}else {
+				System.out.println("X");
+			}
+			System.out.println();
+			System.out.println("[세부내용]");
+			System.out.println("======================");
+			System.out.println(list.get(index).getDetail());
+		}
+		
+		
+		
 	
 	
 	

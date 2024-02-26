@@ -1,7 +1,10 @@
 package edu.kh.todoList.model.service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Map;
+
+import edu.kh.todoList.model.dto.Todo;
 
 // Service :
 // 데이터 가공, 로직 처리 등의 기능을 제공하는 역할
@@ -22,6 +25,11 @@ public interface TodoListService {
 	public abstract String dateFormat(LocalDateTime regDate);
 	
 	
+	/** 전달받은 index 번째 todo를 반환
+	 * @param index
+	 * @return index번째 todo 상제 정보, 없으면 null 반환
+	 */
+	public abstract List<Todo> todoDetailView(int index);
 	
 	
 	

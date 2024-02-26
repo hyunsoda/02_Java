@@ -107,7 +107,7 @@ public class Person {
 		if(!(obj instanceof Person)) return false;
 		
 		// 다운캐스팅
-		// 매개변수로 들어온 건 object타임 
+		// 매개변수로 들어온 건 object타입 
 		Person other = (Person)obj;
 		
 		return name.equals(other.name) && 
