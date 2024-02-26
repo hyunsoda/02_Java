@@ -1,6 +1,7 @@
 package com.Project.baseball.model.dto;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class BaseballPlayer implements Serializable{
 
@@ -63,8 +64,26 @@ public class BaseballPlayer implements Serializable{
 
 	@Override
 	public String toString() {
-		return "BaseballPlayer [name=" + name + ", team=" + team + ", age=" + age + ", position=" + position
-				+ ", debutYear=" + debutYear + "]";
+		return "이름 : " + name + ", 팀 : " + team + ", 나이 : " + age + ", 포지션 : " + position
+				+ ", 데뷔년도 : " + debutYear;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(age, debutYear, name, position, team);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		BaseballPlayer other = (BaseballPlayer) obj;
+		return age == other.age && debutYear == other.debutYear && Objects.equals(name, other.name)
+				&& Objects.equals(position, other.position) && Objects.equals(team, other.team);
 	}
 	
 	
