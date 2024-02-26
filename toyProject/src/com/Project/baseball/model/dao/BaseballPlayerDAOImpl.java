@@ -5,7 +5,9 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import com.Project.baseball.model.dto.BaseballPlayer;
@@ -67,6 +69,49 @@ public class BaseballPlayerDAOImpl implements BaseballPlayerDAO{
 
 	@Override
 	public Set<BaseballPlayer> selectPlayer() {
+		
 		return playerList;
 	}
+	
+	@Override
+	public String addNewPlayer(BaseballPlayer player) throws Exception {
+
+		if(playerList.add(player)) {
+			saveFile();
+			return player.getName();
+		}
+		return "선수 등록을 실패하였습니다";
+	}
+
+	@Override
+	public boolean updatePlayer(String fixName,String team, String position) throws Exception {
+		for(BaseballPlayer player : playerList) {
+			if(player.getName().equals(fixName)) {
+				player.setTeam(team);
+				player.setPosition(position);
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	
+	
+	@Override
+	public List<BaseballPlayer> sortTeam() {
+		List<BaseballPlayer> plist = new ArrayList<BaseballPlayer>();
+	for(BaseballPlayer player : playerList) {
+		plist.add(new BaseballPlayer(player.getName(),player.getTeam(),player.getAge(),player.getPosition(),player.getDebutYear()));
+	}
+		return plist;
+	}
+	
+	@Override
+	public BaseballPlayer deletePlayer(int num) throws Exception {
+		
+		return null;
+	}
 }
+
+
+
