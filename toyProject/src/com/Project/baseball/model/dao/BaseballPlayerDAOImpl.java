@@ -44,6 +44,9 @@ public class BaseballPlayerDAOImpl implements BaseballPlayerDAO{
 			playerList.add(new BaseballPlayer("문동주","한화",20,"투수",2022));
 			playerList.add(new BaseballPlayer("박건우","NC",33,"우익수",2009));
 			playerList.add(new BaseballPlayer("정수빈","두산",33,"중견수",2009));
+			playerList.add(new BaseballPlayer("김택연","두산",18,"투수",2009));
+			playerList.add(new BaseballPlayer("윤동희","롯데",20,"우익수",2022));
+			playerList.add(new BaseballPlayer("노시환","한화",23,"내야수",2019));
 		
 		try {
 			oos = new ObjectOutputStream(new FileOutputStream(FILE_PATH));
