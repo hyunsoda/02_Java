@@ -154,7 +154,7 @@ public class BaseballPlayerView {
 			}
 		for(BaseballPlayer player : playerList) {
 				if(result) {
-					System.out.printf("== %s선수의 프로필 수정이 완료되었습니다.== ",player.getName());
+					System.out.printf("== %s선수의 프로필 수정이 완료되었습니다.==\n ",fixName);
 					System.out.println("============================================");
 					break;
 				}else {
@@ -176,7 +176,10 @@ public class BaseballPlayerView {
 		
 		BaseballPlayer player = service.searchPlayer(name);
 		if(player != null) {
+			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+			System.out.printf("검색하신 %s선수의 프로필입니다!\n",name);
 			System.out.println(player);
+			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		} else {
 			System.out.println("해당하는 선수가 없습니다.");
 		}
@@ -239,42 +242,34 @@ public class BaseballPlayerView {
 		System.out.print("두 번째 이름 : ");
 		String name2 = br.readLine();
 		
-		List<BaseballPlayer> playerList = service.sortTeam();
+		Set<BaseballPlayer> playerList = service.selectPlayer();
 		
 		int player1 = 0;
 		int player2 = 0;
 		
 		for(BaseballPlayer player : playerList) {
 			if(name1.equals(player.getName())) {
-			
-			player1 = service.debutFirst(name1);
-	
-			} else {
-				System.out.println("등록되어있지 않은 선수입니다. ");
-				return;
+				player1 = service.debutFirst(name1);
 			}
 		}
 		
 		for(BaseballPlayer player : playerList) {
 			if(name2.equals(player.getName())) {
-				
 				player2 = service.debutFirst(name2);
-				
-			}else {
-				System.out.println("등록되어있지 않은 선수입니다. ");
-				return;
 			}
-		}		
-	
-		Comparator<BaseballPlayer> debutYearComparator = Comparator.comparing(BaseballPlayer::getDebutYear);
-		Collections.sort(playerList, debutYearComparator);
-
-		if(player1 <player2) {
-			System.out.printf("%s선수가 %s보다 선배입니다.",name1,name2);
-		}else {
-			System.out.printf("%s선수가 %s보다 선배입니다.",name2,name1);
 		}
-	};
+		
+		
+		if(player1==0 || player2 ==0) {
+			System.out.println("등록되어있지 않은 선수입니다.");
+		}else if(player1 <player2) {
+			System.out.printf("%s선수가 %s선수보다 선배입니다.",name1,name2);
+		}else if(player1>player2){
+			System.out.printf("%s선수가 %s선수보다 선배입니다.",name2,name1);
+		} else if(player1 == player2){
+			System.out.printf("%s선수와 %s선수의 입단 연도는 같습니다.",name1,name2);
+		} 
+	}
 
 	
 

@@ -11,7 +11,7 @@ public interface BaseballPlayerService {
 
 	public abstract String addNewPlayer(String name, String team, int age, String position, int debutYear) throws Exception;
 
-	public abstract boolean updatePlayer(String fixNAme,String team, String position ) throws Exception;
+	public abstract boolean updatePlayer(String fixName,String team, String position ) throws Exception;
 
 	public abstract List<BaseballPlayer> sortTeam();
 

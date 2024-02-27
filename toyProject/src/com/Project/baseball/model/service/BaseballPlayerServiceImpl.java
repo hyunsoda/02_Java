@@ -69,7 +69,7 @@ public class BaseballPlayerServiceImpl implements BaseballPlayerService{
 	
 	@Override
 	public int debutFirst(String name2) throws Exception {
-		List<BaseballPlayer> playerList = dao.debutfirst();
+		Set<BaseballPlayer> playerList = dao.debutfirst();
 		int year = 0;
 		
 		for(BaseballPlayer player : playerList) {

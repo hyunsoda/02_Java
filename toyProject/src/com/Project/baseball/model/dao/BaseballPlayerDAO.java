@@ -23,5 +23,5 @@ public interface BaseballPlayerDAO {
 
 	List<BaseballPlayer> debutYearSort();
 
-	List<BaseballPlayer> debutfirst() throws Exception;
+	Set<BaseballPlayer> debutfirst() throws Exception;
 }

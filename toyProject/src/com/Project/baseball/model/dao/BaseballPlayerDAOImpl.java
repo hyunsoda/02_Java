@@ -47,7 +47,11 @@ public class BaseballPlayerDAOImpl implements BaseballPlayerDAO{
 			playerList.add(new BaseballPlayer("김택연","두산",18,"투수",2009));
 			playerList.add(new BaseballPlayer("윤동희","롯데",20,"우익수",2022));
 			playerList.add(new BaseballPlayer("노시환","한화",23,"내야수",2019));
-		
+			playerList.add(new BaseballPlayer("양석환","두산",23,"내야수",2014));
+			playerList.add(new BaseballPlayer("김도영","KIA",20,"내야수",2022));
+			playerList.add(new BaseballPlayer("임찬규","LG",31,"투수",2010));
+			playerList.add(new BaseballPlayer("박동원","LG",33,"포수",2009));
+			
 		try {
 			oos = new ObjectOutputStream(new FileOutputStream(FILE_PATH));
 			oos.writeObject(playerList);
@@ -146,12 +150,14 @@ public class BaseballPlayerDAOImpl implements BaseballPlayerDAO{
 	}
 	
 	@Override
-	public List<BaseballPlayer> debutfirst() throws Exception {
-		List<BaseballPlayer> player = new ArrayList<BaseballPlayer>();
-		for(BaseballPlayer bp : playerList) {
-			player.add(bp);
-		}
-			return player;
+	public Set<BaseballPlayer> debutfirst() throws Exception {
+		
+		return playerList;
+//		List<BaseballPlayer> player = new ArrayList<BaseballPlayer>();
+//		for(BaseballPlayer bp : playerList) {
+//			player.add(bp);
+//		}
+//			return player;
 		}
 }
 
