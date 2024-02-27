@@ -49,12 +49,35 @@ public class BaseballPlayerServiceImpl implements BaseballPlayerService{
 	}
 	
 	@Override
-	public int deletePlayer(int num) throws Exception {
-		BaseballPlayer player = dao.deletePlayer(num);
-		if(player == null)return -1;
-		return 1;
+	public int deletePlayer(String rname) throws Exception {
+		String dName = dao.deletePlayer(rname);
+		if(dName != null) return 1;
+		else return -1;
 	}
 	
+	@Override
+	public BaseballPlayer searchPlayer(String name) throws Exception {
+		BaseballPlayer player = dao.searchPlayer(name);
+		return player;
+	}
 	
+	@Override
+	public List<BaseballPlayer> debutYearSort() {
+		List<BaseballPlayer> playerList = dao.debutYearSort();
+		return playerList;
+	}
+	
+	@Override
+	public int debutFirst(String name2) throws Exception {
+		List<BaseballPlayer> playerList = dao.debutfirst();
+		int year = 0;
+		
+		for(BaseballPlayer player : playerList) {
+			if(name2.equals(player.getName())) {
+				year = player.getDebutYear();
+			}
+		}
+		return year;
+	}
 	
 }

@@ -15,7 +15,13 @@ public interface BaseballPlayerService {
 
 	public abstract List<BaseballPlayer> sortTeam();
 
-	public abstract int deletePlayer(int num) throws Exception;
+	public abstract int deletePlayer(String rname) throws Exception;
+
+	public abstract BaseballPlayer searchPlayer(String name) throws Exception;
+
+	public abstract List<BaseballPlayer> debutYearSort();
+
+	public abstract int debutFirst(String name2) throws Exception;
 
 
 }

@@ -17,5 +17,11 @@ public interface BaseballPlayerDAO {
 
 	List<BaseballPlayer> sortTeam();
 
-	BaseballPlayer deletePlayer(int num) throws Exception;
+	String deletePlayer(String rname) throws Exception;
+
+	BaseballPlayer searchPlayer(String name);
+
+	List<BaseballPlayer> debutYearSort();
+
+	List<BaseballPlayer> debutfirst() throws Exception;
 }

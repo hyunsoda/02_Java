@@ -89,6 +89,7 @@ public class BaseballPlayerDAOImpl implements BaseballPlayerDAO{
 			if(player.getName().equals(fixName)) {
 				player.setTeam(team);
 				player.setPosition(position);
+				saveFile();
 				return true;
 			}
 		}
@@ -107,10 +108,48 @@ public class BaseballPlayerDAOImpl implements BaseballPlayerDAO{
 	}
 	
 	@Override
-	public BaseballPlayer deletePlayer(int num) throws Exception {
+	public String deletePlayer(String rname) throws Exception {
+		for(BaseballPlayer player : playerList) {
+			if(player.getName().equals(rname)) {
+			playerList.remove(player);
+			saveFile();
+			return rname;
+		}
+		}
 		
 		return null;
 	}
+	
+	
+	
+	@Override
+	public BaseballPlayer searchPlayer(String name) {
+		for(BaseballPlayer player : playerList) {
+			if(name.equals(player.getName())) {
+				return player;
+			}
+		}
+		return null;
+	}
+	
+	@Override
+	public List<BaseballPlayer> debutYearSort() {
+		List<BaseballPlayer> player = new ArrayList<BaseballPlayer>();
+		for(BaseballPlayer bp : playerList) {
+			player.add(bp);
+		}
+		
+		return player;
+	}
+	
+	@Override
+	public List<BaseballPlayer> debutfirst() throws Exception {
+		List<BaseballPlayer> player = new ArrayList<BaseballPlayer>();
+		for(BaseballPlayer bp : playerList) {
+			player.add(bp);
+		}
+			return player;
+		}
 }
 
 
