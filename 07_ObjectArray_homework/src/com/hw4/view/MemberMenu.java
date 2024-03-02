@@ -134,7 +134,7 @@ public class MemberMenu {
 			System.out.print("변경할 회원 아이디");
 			String userId = sc.next();
 			
-			mc.updateMember(m, menu, userId);
+			mc.updateMember(menu, userId);
 			
 		}
 	}

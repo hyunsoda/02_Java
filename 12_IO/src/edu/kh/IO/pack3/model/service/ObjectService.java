@@ -97,7 +97,6 @@ public class ObjectService {
 			// Object ois.readObject() : 직렬화된 객체를 읽어와 역직렬화
 															// + Member 객체로 변경 (다운캐스팅)
 			Member member = (Member)ois.readObject();
-			
 			// 읽어온 내용 확인
 			System.out.println(member);
 			
