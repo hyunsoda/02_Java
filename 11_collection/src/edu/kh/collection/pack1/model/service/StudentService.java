@@ -56,14 +56,15 @@ public class StudentService {
 		// studentList.add(new Object()); // 3번
 		
 		// 컬렉션 특징 :  여러 타입의 데이터를 저장할 수 있다.
-		
-		
+	
 		
 		// Object List.get(index i) : 리스트에서 i번째 인덱스에 있는 객체를 반환
 		// 반환형이 Object == 모든 객체를 반환할 수 있다
 		
 		if(studentList.get(0) instanceof Student) {
 			System.out.println(((Student)studentList.get(0)).getName()); // toString() 오버라이딩 한 형태로 나오고 있다.
+//			System.out.println(studentList.get(0).getName());
+			
 			// 반환형으로 얻어온 건 Object타입 getName은 student타입	=> 강제 형변환 필요
 		}
 		
