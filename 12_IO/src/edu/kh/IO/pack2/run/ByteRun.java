@@ -7,7 +7,7 @@ public class ByteRun {
 	public static void main(String[] args) {
 		
 		ByteService service = new ByteService();
-//		service.fileByteOutput();
+		service.fileByteOutput();
 //		service.bufferedFileByteOutput();
 //		service.fileByteInput();
 //		service.fileByteInput2();
