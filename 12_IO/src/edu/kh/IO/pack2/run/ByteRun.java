@@ -12,7 +12,8 @@ public class ByteRun {
 //		service.fileByteInput();
 //		service.fileByteInput2();
 //		service.bufferedFileByteInput();
-		service.fileCopy();
+//		service.fileCopy();
+		
 	}
 
 }
