@@ -18,7 +18,7 @@ public class LambdaTest {
 	public int operate(int a, int b, Calculator calculator) {
 		return calculator.calc(a, b);
 	}
-	
+	 
 	public void ex() {
 		
 		// 정수형 파라미터 두 개를 받아서 더하는 람다식
