@@ -63,7 +63,7 @@ public class StudentService {
 		
 		if(studentList.get(0) instanceof Student) {
 			System.out.println(((Student)studentList.get(0)).getName()); // toString() 오버라이딩 한 형태로 나오고 있다.
-//			System.out.println(studentList.get(0).getName());
+			System.out.println(studentList.get(0).getName());
 			
 			// 반환형으로 얻어온 건 Object타입 getName은 student타입	=> 강제 형변환 필요
 		}
